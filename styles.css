@@ -199,6 +199,7 @@ div #project{
     border-radius: 24px;
 
     backdrop-filter: blur(40px);
+    transition: all 0.4s ease;
 
     
 }
@@ -250,7 +251,7 @@ div #project{
 
 }
 #Buyn {
-    transition: transform 0.4s ease, filter 0.4s ease;
+    transition: all 0.4s ease;
     background-color: #ff6347;
     width: 140px;
     height: 60px;
@@ -275,12 +276,15 @@ div #project{
 
 }
 #Buyn:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 99, 71, 0);
+
 }
 
 #Contact {
 
-    transition: transform 0.4s ease, filter 0.4s ease;
+    transition: all 0.4s ease;
     width: 140px;
     height: 60px;
     position: static;
@@ -292,10 +296,12 @@ div #project{
     border-radius: 50px;
     border-color: #000000;
     border-style: solid;
+    background-color: rgba(255, 99, 71, 0);
+
     
     border-radius: 50px;
     font-family:Paytone One;
-    color: #ff6347;
+    color: rgb(255, 99, 71);
 
     text-decoration: none;
 
@@ -304,7 +310,9 @@ div #project{
 
 }
 #Contact:hover{
-    transform: scale(1.1);
+    transform: scale(1.03);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 a{
     text-decoration: none;
@@ -604,9 +612,34 @@ color: black;
 transition: background-color 0.4s ease, box-shadow 0.5s ease ;
 
 }
+
+#textc{
+
+    border-radius: 10px;
+    background-color:rgba(212, 109, 91, 0.7);
+    backdrop-filter: blur(10px); 
+    padding: 1.3em ; 
+    text-align: justify;
+    font-family:Merriweather;
+    position: absolute; 
+    top: 14em;
+    left: 2em; 
+    width: 50em; 
+    font-size: 1.6em; 
+    color: black;
+    transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+}
+
+#textc:hover{
+
+    background-color:rgba(225, 146, 132, 0.73);
+    box-shadow: 4px 4px 30px rgb(96, 94, 94);
+}
+
+
 #textprojecte:hover{
 
-    background-color:rgba(255, 99, 71, 0.73);
+    background-color:rgba(229, 154, 141, 0.73);
     box-shadow: 4px 4px 30px rgb(96, 94, 94);
 }
 
@@ -634,12 +667,15 @@ transition: background-color 0.4s ease, box-shadow 0.5s ease ;
 }
 
 .O:hover{
-    transform: translateY(-0.3em);
+    
+    
+
     
 }
 .J:hover{
-    transform: translateY(-0.3em);
+ 
     
+   
 }
 
 .O:hover #oriol{
@@ -666,7 +702,30 @@ transition: background-color 0.4s ease, box-shadow 0.5s ease ;
     transition: all 0.4s ease;
 
 }
-#jaume:hover{
-    
-    
+
+#aio{
+    border-radius: 20px;
+    position: absolute;
+    right: 5em;
+    top: 15em;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+#aio:hover{
+    opacity: 0.6;
+}
+
+#shreck{
+    border-radius: 20px;
+    position: absolute;
+    right: 5em;
+    top: 15em;  
+    transition: all 0.4s ease;
+    width: 37.39em;
+    height: 30.8em;
+    z-index: 0;
+}
+
+#shreck:hover{
+
 }
