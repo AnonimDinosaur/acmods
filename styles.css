@@ -75,6 +75,7 @@ div #project{
 }
 
 #tomato{
+    opacity: 0.6;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -82,12 +83,24 @@ div #project{
     width: 1920px;
     height: 160px;
     z-index: 1;
-    opacity: 1;
-    backdrop-filter: blur(10px);
+    opacity: 0.94;
+    border: #d64c34;
+    border-width: 2px;
+    backdrop-filter: blur(40px);
     border-color: #000000;
     border-width: 2px;
     border-style: solid;
+    filter: blur(2px);
+    transition: filter 0.4s ease, opacity 0.4s ease  ;
 }
+
+
+.banner:hover #tomato{
+    filter: blur(1px);
+    opacity: 1;
+}
+
+
 
 #logo{
     position: fixed;
@@ -171,8 +184,8 @@ div #project{
 #T2 {
     position: absolute;
     display: flex;
-    top: 4.975em; 
-    left: 1.625em; 
+    top: 4.175em; 
+    left: 0.725em; 
     font-size: 2.5em; 
     width: 22.25em; 
     font-family: Merriweather;
@@ -180,6 +193,20 @@ div #project{
     text-decoration: none;
     cursor: default;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    background-color: rgb(198, 188, 188, 0.7);
+    padding: 1em 0em 4em 1em;
+    border-radius: 24px;
+
+    backdrop-filter: blur(40px);
+
+    
+}
+#T2:hover{
+
+    
+    opacity: 1;
+
 }
 
 #text{
@@ -547,4 +574,99 @@ body{
     overflow: auto;
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+}
+
+#projectet1{
+
+    position: absolute; 
+    top: 4.6em; 
+    font-size: 3em;
+    font-family:
+    Merriweather;
+    left: 1.4em; 
+    color: black;
+}
+
+#textprojecte{
+
+border-radius: 10px;
+background-color:rgba(255, 99, 71, 0.7);
+backdrop-filter: blur(10px); 
+padding: 1.3em ; 
+text-align: justify;
+font-family:Merriweather;
+position: absolute; 
+top: 14em;
+left: 2em; 
+width: 50em; 
+font-size: 1.6em; 
+color: black;
+transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+
+}
+#textprojecte:hover{
+
+    background-color:rgba(255, 99, 71, 0.73);
+    box-shadow: 4px 4px 30px rgb(96, 94, 94);
+}
+
+#oriol{
+    background-color: rgb(229, 181, 172, 0.6);
+    padding: 0.4em 6.5em 13em 0.4em;
+    font-family: Merriweather;
+    position: absolute;
+    top: 7.8em;
+    left: 2.52em;
+    font-size: 2.3em;
+    color: black;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+
+    
+
+}
+
+.O{
+    transition: all 0.4s ease;
+}
+.J{
+    transition: all 0.4s ease;
+}
+
+.O:hover{
+    transform: translateY(-0.3em);
+    
+}
+.J:hover{
+    transform: translateY(-0.3em);
+    
+}
+
+.O:hover #oriol{
+    background-color: rgb(229, 181, 172, 086);
+
+}
+
+.J:hover #jaume{
+    background-color: rgb(229, 181, 172, 086);
+
+}
+
+#jaume{
+
+    background-color: rgb(229, 181, 172, 0.6);
+    padding: 0.4em 6.5em 13em 0.4em;
+    font-family: Merriweather;
+    position: absolute;
+    top: 7.8em;
+    left: 18.17em;
+    font-size: 2.3em;
+    color: black;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+
+}
+#jaume:hover{
+    
+    
 }
