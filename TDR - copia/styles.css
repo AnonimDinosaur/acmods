@@ -1,0 +1,997 @@
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#text3{
+    position: absolute;
+    top: 00px;
+    
+    width: 1px;
+    height: 1px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* **************************************Body*********************************************************************************************/
+
+
+
+
+body{
+
+    background-image: url('fotos/background5.jpg');
+    background-size: 110em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    
+    
+    
+}
+
+
+
+/* **************************************INDEX.HTML***********************hola juanjo*****************************************************/
+
+@keyframes car {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+    #car{
+    animation-name: car;
+    animation-duration: .8s;
+    position: absolute;
+    display: flex;
+    top: 28.85em;
+    width: 22.15em;
+    left: 3.25em;
+    z-index: 1;
+    
+    
+    }
+
+    #T2 {
+    position: absolute;
+    display: flex;
+    top: 4.175em; 
+    left: 0.725em; 
+    font-size: 2.5em; 
+    width: 22.25em; 
+    font-family: Merriweather;
+    color: #000000;
+    text-decoration: none;
+    cursor: default;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    background-color: rgb(198, 188, 188, 0.7);
+    padding: 1em 0em 4em 1em;
+    border-radius: 24px;
+
+    backdrop-filter: blur(40px);
+    transition: all 0.4s ease;
+
+    
+    }
+
+    #text{
+    position: absolute;
+    display: flex;
+    top: 13em;
+    left: 70px;
+    font-size: 25px;    
+    width: 800px;
+    font-family:Paytone One;
+    color: #000000;
+    text-decoration: none;
+    cursor:default;
+    }
+
+    .texth{
+        
+        animation-name: texth;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+    
+    }
+    
+
+    @keyframes buy {
+    from{
+        transform: scale(0.91);
+    }
+    to{
+        transform: scale(1);
+    }
+    
+    }
+    
+    .buy{
+    
+        position: absolute;
+        left: 24em;
+        top: 31em;
+        display:flex;
+        gap: 40px;
+        font-size: 20px;
+        font-family:Paytone One;
+        color: #000000;
+        text-decoration: none;
+        animation-name: buy;
+        animation-duration: 0.4s;
+        
+        
+    
+    }
+    #Buyn {
+        transition: all 0.4s ease;
+        background-color: #ff6347;
+        width: 140px;
+        height: 60px;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 50px;
+        font-family:Paytone One;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    
+        text-shadow: 
+        1px 1px 0px #000000,
+        -1px -1px 0px #000000,
+        -1px 1px 0px #000000,
+        1px -1px 0px #000000,
+    
+    }
+    #Buyn:hover{
+        transform: scale(1.03);
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 99, 71, 0);
+    
+    }
+    
+    #Contact {
+    
+        transition: all 0.4s ease;
+        width: 140px;
+        height: 60px;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-width: 2px;
+        border-radius: 50px;
+        border-color: #000000;
+        border-style: solid;
+        background-color: rgba(255, 99, 71, 0);
+    
+        
+        border-radius: 50px;
+        font-family:Paytone One;
+        color: rgb(255, 99, 71);
+    
+        text-decoration: none;
+    
+    
+    
+    
+    }
+    #Contact:hover{
+        transform: scale(1.03);
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+
+
+    .container {
+        animation: escola 0.4s;
+        position: absolute;
+        top: 14.6874em;
+        left: 1010px;
+        width: 800px; 
+        height: 600px;
+        overflow: hidden;
+        border-radius: 10px; 
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    }
+    .container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .container #img1 {
+        animation: fadeInOut 20s infinite;
+    }
+    .container #img2 {
+        animation: fadeInOut2 20s infinite;
+    }
+    
+    @keyframes fadeInOut {  
+        0% { opacity: 1; }
+        5% { opacity: 1; }
+        45% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+    @keyframes fadeInOut2 {
+        0% { opacity: 0; }
+        50% { opacity: 0; }
+        55% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    #escola{
+        position: relative;
+        width: 890px;
+        left: 1050px;
+        bottom: -40px;
+        margin: -15px; /* Amplada de la zona borrosa */
+        z-index: -1;
+        clip-path: inset(-100px);
+        filter: blur(0px); /* Intensitat de la borrositat */
+        border-radius: 10px; /* Opcional: per a cantonades arrodonides */
+    
+    }
+
+    @keyframes escola{
+        from{
+            transform: scale(0.9);
+        }
+        to{
+            transform: scale(1);
+
+        }
+    }
+
+
+    
+/* **************************************Credits.HTML*************************************************************************************/
+
+@keyframes crepro {
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+        transform: translateX(0px);
+
+    }
+}
+
+#gracies{
+    animation: crepro 0.4s;
+    font-family: Merriweather;
+    position: absolute; 
+    top: 4.6em; 
+    left: 1.4em; 
+    font-size: 3em;
+    color: black;
+
+}
+#textc{
+    animation: crepro 0.4s;
+    border-radius: 10px;
+    background-color:rgba(212, 109, 91, 0.7);
+    backdrop-filter: blur(10px); 
+    padding: 1.3em ; 
+    text-align: justify;
+    font-family:Merriweather;
+    position: absolute; 
+    top: 14em;
+    left: 2em; 
+    width: 50em; 
+    font-size: 1.6em; 
+    color: black;
+    transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+}
+
+#textc:hover{
+
+    background-color:rgba(225, 146, 132, 0.73);
+    box-shadow: 4px 4px 30px rgb(96, 94, 94);
+}
+
+/* **************************************Servei.HTML****************************************************************************************/
+
+#t1s{
+
+    animation: crepro 0.4s;
+    position: absolute; 
+    top: 4.6em; 
+    font-size: 3em;
+    font-family:
+    Merriweather;
+    left: 1.4em; 
+    color: black;
+
+}
+#texts{
+
+    animation: crepro 0.4s;
+    border-radius: 10px;
+    background-color:rgba(255, 99, 71, 0.7);
+    backdrop-filter: blur(10px); 
+    padding: 1.3em ; 
+    text-align: justify;
+    font-family:Merriweather;
+    position: absolute; 
+    top: 14em;
+    left: 2em; 
+    width: 50em; 
+    font-size: 1.6em; 
+    color: black;
+    transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+
+}
+
+#texts:hover{
+
+    background-color:rgba(229, 154, 141, 0.73);
+    box-shadow: 4px 4px 30px rgb(96, 94, 94);
+}
+
+/* **************************************about.HTML*****************************************************************************************/
+#oriol{
+    background-color: rgb(229, 181, 172, 0.6);
+    padding: 0.4em 6.5em 13em 0.4em;
+    font-family: Merriweather;
+    position: absolute;
+    top: 7.8em;
+    left: 2.52em;
+    font-size: 2.3em;
+    color: black;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+
+
+
+}
+
+@keyframes quisom {
+    from{
+        transform: translatey(20px)
+        scale(1)
+    }
+    to{
+        transform: translateY(0px)
+        scale(1)
+    }
+}
+
+@keyframes som {
+from{
+    transform: translateX(-100px);
+}
+to{
+    transform: translateX(0px);
+} 
+}
+.som{
+    animation-name: som;
+    animation-duration: 0.5s;
+
+    font-family: Merriweather;
+    position: absolute;
+    top: 5em;
+    left: 2em;
+    font-size: 2.5em;
+    color: black;
+}
+
+#texto{
+    transition: all 0.4s ease;
+    font-family: Merriweather;
+    position: absolute;
+    top: 14.95em;
+    left: 4.6em;
+    font-size: 1.5em;
+    color: black;
+    width: 17em;
+}
+.O:hover #texto{
+    transform: translateY(-20px);
+}
+
+#textj{
+    transition: all 0.4s ease;
+    font-family: Merriweather;
+    position: absolute;
+    top: 14.95em;
+    left: 29.0em;
+    font-size: 1.5em;
+    color: black;
+    width: 17em;
+}
+
+.J:hover #textj{
+    transform: translateY(-20px);
+}
+
+
+.O{
+    transition: all 0.4s ease;
+    animation-name: quisom;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+.J{
+    transition: all 0.4s ease;
+    animation-name: quisom;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+
+#imgO{
+    transition: all 0.4s ease;
+    z-index: 10;
+    position: absolute;
+    top: 35em;
+    left: 7em;
+    border-radius: 10px;
+}
+#imgJ{
+    transition: all 0.4s ease;
+    z-index: 10;
+    position: absolute;
+    top: 35em;
+    left: 43em;
+    border-radius: 10px;
+
+}
+
+.O:hover #oriol{
+    background-color: rgb(229, 181, 172, 086);
+    transform: translateY(-20px);
+    border-width: 2px;
+    border-color: #000000;
+    border-style: dashed;
+
+}
+
+.J:hover #jaume{
+    background-color: rgb(229, 181, 172, 086);
+    transform: translateY(-20px);
+    border-width: 2px;
+    border-color: #000000;
+    border-style: dashed;
+
+}
+.O:hover #imgO{
+    
+    transform: translateY(-20px);
+    transform: scale3d(1.1, 1.1, 1.1);
+
+}
+
+.J:hover #imgJ{
+    
+    transform: translateY(-20px);
+    transform: scale3d(1.1, 1.1, 1.1);
+
+}
+
+
+#jaume{
+    
+    background-color: rgb(229, 181, 172, 0.6);
+    padding: 0.4em 6.5em 13em 0.4em;
+    font-family: Merriweather;
+    position: absolute;
+    top: 7.8em;
+    left: 18.17em;
+    font-size: 2.3em;
+    color: black;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+
+}
+
+@keyframes aio {
+    from{
+        transform: translateY(-40px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+#aio{
+    animation-name: aio;
+    animation-duration: 0.4s;
+    border-radius: 20px;
+    position: absolute;
+    left: 76.419em;
+    top: 15em;
+    transition: all 20s ease;
+    z-index: 1;
+}
+
+#aio:hover{
+    opacity: 0.6;
+}
+
+#shreck{
+    animation-name: aio;
+    animation-duration: 0.4s;
+    border-radius: 20px;
+    position: absolute;
+    right: 5em;
+    top: 15em;  
+    transition: all 0.4s ease;
+    width: 37.39em;
+    height: 30.8em;
+    z-index: 0;
+}
+/* **************************************pagament.HTML**************************************************************************************/
+#taula{
+    position: absolute;
+    top: 15em;
+    right: 44%;
+    background-color: white;
+    height: 17em;
+    width: 14em;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 100px;
+    margin-top: -20px;
+    background-color: rgba(white, white, white, 0.4);
+    background-position: center;
+   
+    font-size: 1.5em;
+}
+#subscription {
+    position: absolute;
+    
+    background-color: #FFFFFF;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#subscription h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+#subscription button {
+    background-color: #ff6347;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+}
+
+#subscription button:hover {
+    background-color: #ff6347;
+    transform: translateY(-5px);
+}
+
+/* Subscription Plan Section */
+#subscription-plan {
+    position: absolute;
+    top: 11em;
+    right: 50em;
+    background: url('subscription-bg.jpg') no-repeat center center/cover;
+    padding: 80px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#subscription-plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+#subscription-plan h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+}
+
+#subscription-plan h2::after {
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: #ff6347;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+#subscription-plan h3 {
+    font-size: 2em;
+    color: #ff6347;
+    margin-bottom: 20px;
+}
+
+#subscription-plan ul {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 400px;
+    text-align: left;
+    list-style-position: inside;
+}
+
+#subscription-plan ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+#subscription-plan ul li::before {
+    content: '✔';
+    color: #ff6347;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#subscription-plan button {
+    background-color: #ff6347;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#subscription-plan button:hover {
+    background-color: #ff6347;
+    transform: translateY(-5px);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#payment-modal {
+
+    
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* **************************************projecte.HTML**************************************************************************************/
+
+#projectet1{
+    animation: crepro 0.4s;
+    position: absolute; 
+    top: 4.6em; 
+    font-size: 3em;
+    font-family:
+    Merriweather;
+    left: 1.4em; 
+    color: black;
+}
+
+#textprojecte{
+animation: crepro 0.4s;
+border-radius: 10px;
+background-color:rgba(255, 99, 71, 0.7);
+backdrop-filter: blur(10px); 
+padding: 1.3em ; 
+text-align: justify;
+font-family:Merriweather;
+position: absolute; 
+top: 14em;
+left: 2em; 
+width: 50em; 
+font-size: 1.6em; 
+color: black;
+transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+
+}
+
+#textprojecte:hover{
+
+    background-color:rgba(229, 154, 141, 0.73);
+    box-shadow: 4px 4px 30px rgb(96, 94, 94);
+}
+
+div #project{
+    left: 60px;
+}
+
+/* **************************************Headboard******************************************************************************************/
+
+#tomato{
+    opacity: 0.6;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    width: 100%;
+    height: 160px;
+    z-index: 1;
+    opacity: 0.94;
+    border: #d64c34;
+    border-width: 2px;
+    backdrop-filter: blur(40px);
+    border-color: #000000;
+    border-width: 2px;
+    border-style: solid;
+    filter: blur(2px);
+    transition: filter 0.4s ease, opacity 0.4s ease  ;
+}
+
+
+.banner:hover #tomato{
+    filter: blur(1px);
+    opacity: 1;
+}
+
+
+
+#logo{
+    position: fixed;
+    top: 76px;
+    left: 590px;
+    display: flex;
+    width: 110px;
+
+    
+    opacity: 1;
+
+  
+}
+
+
+
+#T1{
+    z-index: 20;
+    top: -0px;
+    left: 80px;
+    display: flex;
+    position: fixed;
+    font-size: 60px;
+    font-family: Playfair Display;
+    color: #ffff;
+    text-decoration: none;
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+    cursor:default;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+    animation-name: t1;
+    animation-duration: 0.5s;
+    
+     
+    
+    
+}
+#T1:hover{
+
+    
+    
+    cursor:default;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    
+}
+
+@keyframes t1 {
+
+    from{
+
+        transform: translateX(-200px);
+    }
+    to{
+
+        transform: translateX(0px);
+    }
+}
+@keyframes texth {
+
+    from{
+
+        transform: translateX(-50px);
+    }
+    to{
+
+        transform: translateX(0px);
+    }
+}
+
+#ac{
+    position: fixed;
+
+    animation-name: t1;
+    animation-duration: 0.5s;
+
+    top: 1.85em;
+    width: 7.15em;
+    left: 35.25em;
+    z-index: 100;
+    
+    
+}
+
+#Tac{
+    z-index: 200;
+    top: 3.5em;
+    left: 33em;
+    animation-name: t1;
+    animation-duration: 0.5s;
+    position: fixed;
+    font-size: 20px;
+    font-family: Playfair Display;
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+    cursor:default;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+     
+    
+    
+}
+#Tac:hover{
+
+    
+    
+    cursor:default;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    
+}
+
+@keyframes links{
+    
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+.links{
+
+    animation-name: links;
+    animation-duration: 0.4s;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    position: fixed;
+    left: 1330px;
+    top: 60px;
+    display: flex;
+    gap: 40px;
+    font-size: 20px;
+    font-family:Paytone One;
+    color: rgb(22, 22, 92);
+    text-decoration: none;
+    z-index: 3;
+
+
+}
+
+#H:hover{
+    transform: translateY(-5px);
+    color: rgb(50, 49, 49);
+}
+#S:hover{
+    transform: translateY(-5px);
+    color: rgb(50, 49, 49);
+}
+#C:hover{
+    transform: translateY(-5px);
+    color: rgb(50, 49, 49);
+}
+#P:hover{
+    transform: translateY(-5px);
+    color: rgb(50, 49, 49);
+}
+#A:hover{
+    transform: translateY(-5px);
+    color: rgb(50, 49, 49);
+}
+#H{
+    transition: transform 0.2s ease, filter 0.4s ease;
+}
+#S{
+    transition: transform 0.2s ease, filter 0.4s ease;
+}
+#C{
+    transition: transform 0.2s ease, filter 0.4s ease;
+}
+#P{
+    transition: transform 0.2s ease, filter 0.4s ease;
+}
+#A{
+    transition: transform 0.2s ease, filter 0.4s ease;
+}
+/* **************************************Bottomboard****************************************************************************************/
+
+
+#blau {
+    position: absolute;
+    top: 56.25em; /* Ajusta la posición vertical según tus necesidades */
+    left: 00px; /* Ajusta la posición horizontal según tus necesidades */
+    display: flex;
+    width: 100%;
+    height: 9.75em;
+    padding: 0;
+}
+
+
+#copy{
+    position: absolute;
+    display: flex;
+    top: 51em;
+    
+    left: 51px;
+    font-size: 18px;    
+    width: 800px;
+    font-family:Paytone One;
+    color: #fdfefe;
+    text-decoration: none;
+    cursor:default;
+}
