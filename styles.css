@@ -1,97 +1,719 @@
-#linea{
+
+
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+#text3{
     position: absolute;
-    display: flex;
-    top: 10.105em;
-    width: 112.5em;
-    height: 3.125em;
-    right: 3.375em;
+    top: 00px;
     
-}
-#car{
-    position: absolute;
-    display: flex;
-    top: 28.85em;
-    width: 22.15em;
-    left: 3.25em;
-    z-index: 1;
-    
+    width: 1px;
+    height: 1px;
     
 }
 
-#ac{
-    position: fixed;
-    display: flex;
-    top: 1.85em;
-    width: 7.15em;
-    left: 35.25em;
-    z-index: 100;
-    
-    
-}
-#ac:hover{
 
-    
 
-}
-/*
-#linea1{
-    position: relative;
-    display: flex;
-    bottom: -720px;
-    width: 1200px;
-    height: 50px;
-    right: -29px;
-}
-*/
+
+
+
+
+
+
+
+
+
+
+
+/* **************************************Body*********************************************************************************************/
+
+
+
 
 body{
-    background-image: url(backdrops/background4.jpg);
-    background-size: cover;
-    font-family:Paytone One;
-    color: #16165c;
-    text-decoration: none;
-    transition: background-image 0.5s;
+
+    background-image: url('fotos/background5.jpg');
+    background-size: cover; 
+    background-attachment: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    
+    
+    
 }
 
-body.scrolled {
-    background-image: url('backdrops/background2.jpg'); /* Nova imatge de fons quan es fa scroll */
+
+
+/* **************************************INDEX.HTML***********************hola juanjo*****************************************************/
+
+@keyframes car {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
-.links{
-    transition: transform 0.4s ease, filter 0.4s ease;
-    position: fixed;
-    left: 1330px;
-    top: 60px;
+    #car{
+        animation-name: car;
+        animation-duration: 0.8s;
+        position: absolute;
+        display: flex;
+        top: 28.03vw;
+        width: 16.73vw;
+        left: 2.18vw;
+        z-index: 1;
+        transition: all 0.4s ease;
+        
+    
+    
+    }
+
+    #T2 {
+        position: absolute;
+        display: flex;
+        top: 10.78vw;
+        left: 1.66vw;
+        font-size: 1.93vw;
+        width: 46vw;
+        font-family: Merriweather;
+        color: #000000;
+        text-decoration: none;
+        cursor: default;
+        text-shadow: 0.17vw 0.17vw 0.33vw rgba(0, 0, 0, 0.3);
+        background-color: rgb(198, 188, 188, 0.7);
+        padding: 1.00vw 1vw 8.67vw 1.00vw;
+        border-radius: 1.67vw;
+        backdrop-filter: blur(3.33vw);
+        transition: all 0.4s ease;
+        
+
+    
+    }
+
+    #text{
+        position: absolute;
+        display: flex;
+        top: 17.67vw;
+        left: 2.93vw;
+        font-size: 1.38vw;
+        width: 45.67vw;
+        font-family: Paytone One;
+        color: #000000;
+        text-decoration: none;
+        cursor: default;   
+        transition: all 0.4s ease;     
+    }
+
+    .texth{
+        
+        animation-name: texth;
+        animation-duration: 0.4s;
+        animation-fill-mode: both;
+    
+    }
+    
+
+    @keyframes buy {
+    from{
+        transform: scale(0.91);
+    }
+    to{
+        transform: scale(1);
+    }
+    
+    }
+    
+    .buy{
+    
+        position: absolute;
+        left: 23.00vw;
+        top: 32.83vw;
+        display: flex;
+        gap: 3.33vw;
+        font-size: 1.47vw;
+        font-family: Paytone One;
+        color: #000000;
+        text-decoration: none;
+        animation-name: buy;
+        animation-duration: 0.4s;
+        transition: all 0.4s ease;
+        
+        
+    
+    }
+    #Buyn {
+        transition: all 0.4s ease;
+        background-color: #ff6347;
+        width: 11.67vw;
+        height: 5.00vw;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-color: black;
+        border-width: 0.12vw;
+        border-style: solid;
+        border-radius: 4.17vw;
+        font-family: Paytone One;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+
+        text-shadow: 
+        0.05vw 0.05vw 0px #000000,
+        -0.05vw -0.05vw 0px #000000,
+        -0.05vw 0.05vw 0px #000000,
+        0.05vw -0.05vw 0px #000000;
+
+    
+    }
+    #Buyn:hover{
+        transform: scale(1.03);
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 99, 71, 0);
+    
+    }
+    
+    #Contact {
+    
+        transition: all 0.4s ease;
+        width: 11.67vw;
+        height: 5.00vw;
+        position: static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-width: 0.17vw;
+        border-radius: 4.17vw;
+        border-color: #000000;
+        border-style: solid;
+        background-color: rgba(255, 99, 71, 0);
+        font-family: Paytone One;
+        color: rgb(255, 99, 71);
+        text-decoration: none;
+    
+    }
+    #Contact:hover{
+        transform: scale(1.03);
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+
+
+    .container {
+        animation: escola 0.4s;
+        position: absolute;
+        top: 13.75vw;
+        left: 55.17vw;
+        width: 36.67vw;
+        height: 30.00vw;
+        overflow: hidden;
+        border-radius: 0.83vw;
+        box-shadow: 0 0.33vw 1.25vw rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease;
+        
+    }
+    .container img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .container #img1 {
+        animation: fadeInOut 20s infinite;
+    }
+    .container #img2 {
+        animation: fadeInOut2 20s infinite;
+    }
+    
+    @keyframes fadeInOut {  
+        0% { opacity: 1; }
+        5% { opacity: 1; }
+        45% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 0; }
+    }
+    @keyframes fadeInOut2 {
+        0% { opacity: 0; }
+        50% { opacity: 0; }
+        55% { opacity: 1; }
+        95% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+
+    #escola{
+        position: relative;
+        width: 890px;
+        left: 1050px;
+        bottom: -40px;
+        margin: -15px; 
+        z-index: -1;
+        clip-path: inset(-100px);
+        filter: blur(0px); 
+        border-radius: 10px; 
+    
+    }
+
+    @keyframes escola{
+        from{
+            transform: scale(0.9);
+        }
+        to{
+            transform: scale(1);
+
+        }
+    }
+
+
+    
+/* **************************************Credits.HTML*************************************************************************************/
+
+@keyframes crepro {
+    from{
+        transform: translateX(-50px);
+    }
+    to{
+        transform: translateX(0px);
+
+    }
+}
+
+#gracies{
+    animation: crepro 0.4s;
+    position: absolute; 
+    top: 9.6vw; 
+    font-size: 3vw;
+    font-family:
+    Merriweather;
+    left: 2.4vw; 
+    color: black;
+    transition: all 0.4s ease;
+
+}
+#textc{
+    animation: crepro 0.4s;
+    border-radius: 10px;
+    background-color:rgba(255, 99, 71, 0.7);
+    backdrop-filter: blur(10px); 
+    padding: 1.3vw ; 
+    text-align: justify;
+    font-family:Merriweather;
+    position: absolute; 
+    top: 18vw;
+    left: 4vw; 
+    width: 60vw; 
+    font-size: 1.6vw; 
+    color: black;
+    transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+    transition: all 0.4s ease;
+}
+
+#textc:hover{
+
+    background-color:rgba(255, 99, 71, 0.887);
+    box-shadow: 1px 1px 30px rgb(96, 94, 94);
+}
+
+/* **************************************Servei.HTML****************************************************************************************/
+
+#t1s{
+
+    animation: crepro 0.4s;
+    position: absolute; 
+    top: 9.6vw; 
+    font-size: 3vw;
+    font-family:
+    Merriweather;
+    left: 2.4vw; 
+    color: black;
+    transition: all 0.4s ease;
+
+}
+#texts{
+
+    animation: crepro 0.4s;
+    border-radius: 10px;
+    background-color:rgba(255, 99, 71, 0.7);
+    backdrop-filter: blur(10px); 
+    padding: 1.3vw ; 
+    text-align: justify;
+    font-family:Merriweather;
+    position: absolute; 
+    top: 18vw;
+    left: 4vw; 
+    width: 60vw; 
+    font-size: 1.6vw; 
+    color: black;
+    transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+    transition: all 0.4s ease;
+
+}
+
+#texts:hover{
+
+    background-color:rgba(255, 99, 71, 0.887);
+    box-shadow: 1px 1px 30px rgb(96, 94, 94);
+}
+
+/* **************************************about.HTML*****************************************************************************************/
+
+
+@keyframes quisom {
+    from{
+        transform: translatey(20px)
+        scale(1)
+    }
+    to{
+        transform: translateY(0px)
+        scale(1)
+    }
+}
+
+@keyframes som {
+from{
+    transform: translateX(-100px);
+}
+to{
+    transform: translateX(0px);
+} 
+}
+.som{
+    animation-name: som;
+    animation-duration: 0.5s;
+    
+    font-family: Merriweather;
+    position: absolute;
+    top: 8.67vw;
+    left: 2.67vw;
+    font-size: 3.33vw;
+    color: black;
+    opacity: 0.7;
+    transition: all 0.4s ease;
+    
+}
+
+.som:hover{
+    opacity: 1;
+    transition: all 0.4s ease;
+}
+
+#texto {
+    transition: all 0.4s ease;
+    font-family: Merriweather;
+    position: absolute;
+    top: 19.93vw;
+    left: 5.13vw;
+    font-size: 1.40vw;
+    color: black;
+    width: 22.67vw;
+}
+
+.O:hover #texto{
+    transform: translateY(-20px);
+}
+
+#textj{
+    transition: all 0.4s ease;
+    font-family: Merriweather;
+    position: absolute;
+    top: 19.93vw;
+    left: 31.13vw;
+    font-size: 1.40vw;
+    color: black;
+    width: 22.67vw;
+}
+
+.J:hover #textj{
+    transform: translateY(-20px);
+}
+
+
+.O{
+    transition: all 0.4s ease;
+    animation-name: quisom;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+.J{
+    transition: all 0.4s ease;
+    animation-name: quisom;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+}
+
+#imgO {
+    transition: all 0.4s ease;
+    z-index: 10;
+    position: absolute;
+    top: 30.67vw;
+    left: 4.83vw;
+    border-radius: 10px;
+    width: 12.3912vw;
+    height: 12.8vw;
+}
+
+#imgJ{
+    transition: all 0.4s ease;
+    z-index: 10;
+    position: absolute;
+    top: 30.67vw;
+    left: 31.23vw;
+    border-radius: 10px;
+    width: 12.3912vw;
+    height: 12.8vw;
+
+}
+
+.O:hover #oriol{
+    background-color: rgb(229, 181, 172, 086);
+    transform: translateY(-20px);
+    border-width: 2px;
+    border-color: #000000;
+    border-style: dashed;
+
+}
+
+.J:hover #jaume{
+    background-color: rgb(229, 181, 172, 086);
+    transform: translateY(-20px);
+    border-width: 2px;
+    border-color: #000000;
+    border-style: dashed;
+
+}
+.O:hover #imgO{
+    
+    transform: translateY(-20px);
+    transform: scale3d(1.1, 1.1, 1.1);
+
+}
+
+.J:hover #imgJ{
+    
+    transform: translateY(-20px);
+    transform: scale3d(1.1, 1.1, 1.1);
+
+}
+
+
+#jaume {
+    background-color: rgb(229, 181, 172, 0.6);
+    padding: 0.53vw 6.67vw 23.33vw 0.53vw;
+    font-family: Merriweather;
+    position: absolute;
+    top: 14.10vw;
+    left: 30.23vw;
+    font-size: 3.07vw;
+    color: black;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+#oriol{
+    background-color: rgb(229, 181, 172, 0.6);
+    padding: 0.53vw 8.67vw 23.33vw 0.53vw;
+    font-family: Merriweather;
+    position: absolute;
+    top: 14.10vw;
+    left: 4vw;
+    font-size: 3.07vw;
+    color: black;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+@keyframes aio {
+    from{
+        transform: translateY(-40px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+#aio{
+    animation-name: aio;
+    animation-duration: 0.4s;
+    border-radius: 1.6vw;
+    position: absolute;
+    left: 63.919vw;
+    top: 26vh;
+    transition: all 0.4s ease;
+    z-index: 1;
+    width: 31.3912vw;
+    height: 25.8vw;
+}
+
+#aio:hover{
+    opacity: 0.6;
+    transition: opacity 20s ease;
+}
+
+#shreck{
+    animation-name: aio;
+    animation-duration: 0.4s;
+    border-radius: 1.6vw;
+    position: absolute;
+    left: 63.919vw;
+    top: 26vh;
+    transition: all 0.4s ease;
+    width: 31.3912vw;
+    height: 25.8vw;
+    z-index: 0;
+}
+/* **************************************pagament.HTML**************************************************************************************/
+#imgp{
+    width: 30vw; 
+    border-radius: 20px; 
+    position: absolute; 
+    top: 18vw; 
+    left: 5vw; 
+    box-shadow: 5px 5px 10px grey;
+    transition: all 0.4s ease;
+}
+
+#boardp{
+    position: absolute;
     display: flex;
-    gap: 40px;
-    font-size: 20px;
-    font-family:Paytone One;
-    color: rgb(22, 22, 92);
+    top: 15.78vw;
+    left: 39.66vw;
+    font-size: 1.93vw;
+    width: 46vw;
+    font-family: Merriweather;
+    color: #000000;
     text-decoration: none;
-    z-index: 3;
+    cursor: default;
+    text-shadow: 0.17vw 0.17vw 0.33vw rgba(0, 0, 0, 0.3);
+    background-color: rgb(198, 188, 188, 0.5);
+    padding: 1.00vw 0vw 15.67vw 0.00vw;
+    border-radius: 1.67vw;
+    backdrop-filter: blur(3.33vw);
+    transition: all 0.4s ease;
 }
+
+@keyframes descp{
+    from{
+        transform: translateX(-400px);
+        background-color: #ff63471e;
+    }
+    to{
+        transform: translateX(0px);
+        background-color: #ff6347;
+    }
+}
+
+#descp{
+    animation: descp 1s;
+    padding: 0vw;
+    margin: -9vw 37vw ;
+    transition: all 0.4s ease;
+    background-color: #ff6347;
+    width: 21.67vw;
+    height: 10.00vw;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color: black;
+    border-width: 0.12vw;
+    border-style: solid;
+    border-radius: 4.17vw;
+    font-family: Paytone One;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 3vw;
+
+    text-shadow: 
+    0.05vw 0.05vw 0px #000000,
+    -0.05vw -0.05vw 0px #000000,
+    -0.05vw 0.05vw 0px #000000,
+    0.05vw -0.05vw 0px #000000;
+    
+}
+#descp:hover{
+    transform: scale(1.03);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 99, 71, 0);
+}
+
+
+/* **************************************projecte.HTML**************************************************************************************/
+
+#projectet1{
+    animation: crepro 0.4s;
+    position: absolute; 
+    top: 9.6vw; 
+    font-size: 3vw;
+    font-family:
+    Merriweather;
+    left: 2.4vw; 
+    color: black;
+    transition: all 0.4s ease;
+}
+
+#textprojecte{
+    animation: crepro 0.4s;
+    border-radius: 10px;
+    background-color:rgba(255, 99, 71, 0.7);
+    backdrop-filter: blur(10px); 
+    padding: 1.3vw ; 
+    text-align: justify;
+    font-family:Merriweather;
+    position: absolute; 
+    top: 18vw;
+    left: 4vw; 
+    width: 60vw; 
+    font-size: 1.6vw; 
+    color: black;
+    transition: background-color 0.4s ease, box-shadow 0.5s ease ;
+    transition: all 0.4s ease;
+
+}
+
+#textprojecte:hover{
+
+    background-color:rgba(255, 99, 71, 0.887);
+    box-shadow: 1px 1px 30px rgb(96, 94, 94);
+}
+
 div #project{
     left: 60px;
 }
 
+/* **************************************Headboard******************************************************************************************/
+
 #tomato{
-    opacity: 0.6;
+    opacity: 0.94;
     position: fixed;
     top: 0px;
     left: 0px;
     display: flex;
-    width: 1920px;
-    height: 160px;
+    width: 100%;
+    height: 8.93vw; 
     z-index: 1;
-    opacity: 0.94;
     border: #d64c34;
-    border-width: 2px;
-    backdrop-filter: blur(40px);
+    border-width: 0.17vw; 
     border-color: #000000;
-    border-width: 2px;
     border-style: solid;
-    filter: blur(2px);
-    transition: filter 0.4s ease, opacity 0.4s ease  ;
+    backdrop-filter: blur(3.33vw); 
+    filter: blur(0.17vw); 
+    transition: filter 0.4s ease, opacity 0.4s ease;
+    transition: all 0.4s ease;
+    
 }
 
 
@@ -111,38 +733,29 @@ div #project{
 
     
     opacity: 1;
-
+    transition: all 0.4s ease;
   
 }
-#logo:hover{
-    
-}
 
-#blau {
-    position: absolute;
-    top: 56.25em; /* Ajusta la posición vertical según tus necesidades */
-    left: 00px; /* Ajusta la posición horizontal según tus necesidades */
-    display: flex;
-    width: 127.5em;
-    height: 9.75em;
-    padding: 0;
-}
+
 
 #T1{
     z-index: 20;
-    top: -0px;
-    left: 80px;
+    top: 0px; 
+    left: 1.67vw;
     display: flex;
     position: fixed;
-    font-size: 60px;
+    font-size: 4.00vw;
     font-family: Playfair Display;
     color: #ffff;
     text-decoration: none;
     transition: transform 0.4s ease, text-shadow 0.4s ease;
-    cursor:default;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    text-shadow: 0.17vw 0.17vw 0.33vw rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+    animation-name: t1;
+    animation-duration: 0.5s;
     
-     
     
     
 }
@@ -154,21 +767,59 @@ div #project{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     
 }
-#Tac{
-    z-index: 20;
-    top: 3.5em;
-    left: 33em;
-    display: flex;
+
+@keyframes t1 {
+
+    from{
+
+        transform: translateX(-200px);
+    }
+    to{
+
+        transform: translateX(0px);
+    }
+}
+@keyframes texth {
+
+    from{
+
+        transform: translateX(-50px);
+    }
+    to{
+
+        transform: translateX(0px);
+    }
+}
+
+#ac{
     position: fixed;
-    font-size: 20px;
+    transition: all 0.4s ease;
+    animation-name: t1;
+    animation-duration: 0.5s;
+    
+    top: 2.47vw;
+    width: 6.53vw;
+    left: 33.20vw;
+    z-index: 100;
+    
+    
+}
+
+#Tac{
+    z-index: 200;
+    top: 4.93vw;
+    left: 38.50vw;
+    animation-name: t1;
+    animation-duration: 0.5s;
+    position: fixed;
+    font-size: 1.07vw;
     font-family: Playfair Display;
     color: #000000;
     text-decoration: none;
     transition: transform 0.4s ease, text-shadow 0.4s ease;
-    cursor:default;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
-     
+    cursor: default;
+    text-shadow: 0.17vw 0.17vw 0.33vw rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
     
     
 }
@@ -181,154 +832,33 @@ div #project{
     
 }
 
-#T2 {
-    position: absolute;
-    display: flex;
-    top: 4.175em; 
-    left: 0.725em; 
-    font-size: 2.5em; 
-    width: 22.25em; 
-    font-family: Merriweather;
-    color: #000000;
-    text-decoration: none;
-    cursor: default;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+@keyframes links{
+    
+    from{
+        transform: translateY(-20px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
 
-    background-color: rgb(198, 188, 188, 0.7);
-    padding: 1em 0em 4em 1em;
-    border-radius: 24px;
-
-    backdrop-filter: blur(40px);
+.links{
     transition: all 0.4s ease;
-
-    
-}
-#T2:hover{
-
-    
-    opacity: 1;
-
-}
-
-#text{
-    position: absolute;
+    animation-name: links;
+    animation-duration: 0.4s;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    position: fixed;
+    left: 59.83vw;
+    top: 5.30vw;
     display: flex;
-    top: 13em;
-    left: 70px;
-    font-size: 25px;    
-    width: 800px;
-    font-family:Paytone One;
-    color: #000000;
+    gap: 1.63vw;
+    font-size: 1.37vw;
+    font-family: Paytone One;
+    color: rgb(22, 22, 92);
     text-decoration: none;
-    cursor:default;
-}
-#copy{
-    position: absolute;
-    display: flex;
-    top: 51em;
-    
-    left: 51px;
-    font-size: 18px;    
-    width: 800px;
-    font-family:Paytone One;
-    color: #fdfefe;
-    text-decoration: none;
-    cursor:default;
-}
-
-.buy{
-
-    position: absolute;
-    left: 24em;
-    top: 31em;
-    display:flex;
-    gap: 40px;
-    font-size: 20px;
-    font-family:Paytone One;
-    color: #000000;
-    text-decoration: none;
+    z-index: 3;
     
 
-}
-#Buyn {
-    transition: all 0.4s ease;
-    background-color: #ff6347;
-    width: 140px;
-    height: 60px;
-    position: static;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-color: black;
-    border-width: 2px;
-    border-style: solid;
-    border-radius: 50px;
-    font-family:Paytone One;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-
-    text-shadow: 
-    1px 1px 0px #000000,
-    -1px -1px 0px #000000,
-    -1px 1px 0px #000000,
-    1px -1px 0px #000000,
-
-}
-#Buyn:hover{
-    transform: scale(1.03);
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 99, 71, 0);
-
-}
-
-#Contact {
-
-    transition: all 0.4s ease;
-    width: 140px;
-    height: 60px;
-    position: static;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-width: 2px;
-    border-radius: 50px;
-    border-color: #000000;
-    border-style: solid;
-    background-color: rgba(255, 99, 71, 0);
-
-    
-    border-radius: 50px;
-    font-family:Paytone One;
-    color: rgb(255, 99, 71);
-
-    text-decoration: none;
-
-
-
-
-}
-#Contact:hover{
-    transform: scale(1.03);
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
-a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-
-#escola{
-    position: relative;
-    width: 890px;
-    left: 1050px;
-    bottom: -40px;
-    margin: -15px; /* Amplada de la zona borrosa */
-    z-index: -1;
-    clip-path: inset(-100px);
-    filter: blur(0px); /* Intensitat de la borrositat */
-    border-radius: 10px; /* Opcional: per a cantonades arrodonides */
 
 }
 
@@ -367,365 +897,33 @@ a{
 #A{
     transition: transform 0.2s ease, filter 0.4s ease;
 }
-#text3{
+/* **************************************Bottomboard****************************************************************************************/
+
+
+#blau {
     position: absolute;
-    top: 00px;
-    
-    width: 1px;
-    height: 1px;
-    
-}
-.container {
-    position: absolute;
-    top: 14.6874em;
-    left: 1010px;
-    width: 800px; 
-    height: 600px;
-    overflow: hidden;
-    border-radius: 10px; 
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
-}
-.container img {
-    position: absolute;
+    top: 47.50vw; 
+    left: 0px; 
+    display: flex;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.container img:nth-child(1) {
-    animation: fadeInOut 20s infinite;
-}
-
-.container img:nth-child(2) {
-    animation: fadeInOut 20s infinite;
-    animation-delay: 10s; /* Retrasa el inicio de la animación de la segunda imagen */
-}
-@keyframes fadeInOut {
-    0% { opacity: 0; }
-    10% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-body{
-
-    background-image: url('fotos/background5.jpg');
-    background-size: 110em;
-    
-    
-}
-
-#taula{
-    position: absolute;
-    top: 15em;
-    right: 44%;
-    background-color: white;
-    height: 17em;
-    width: 14em;
-    
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    box-shadow: 10px 10px 100px;
-    margin-top: -20px;
-    background-color: rgba(white, white, white, 0.4);
-    background-position: center;
-   
-    font-size: 1.5em;
-}
-#subscription {
-    position: absolute;
-    
-    background-color: #FFFFFF;
-    padding: 80px 20px;
-    text-align: center;
-}
-
-#subscription h2 {
-    font-size: 2em;
-    margin-bottom: 40px;
-    color: #333;
-}
-
-#subscription button {
-    background-color: #ff6347;
-    color: #FFFFFF;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    border-radius: 5px;
-}
-
-#subscription button:hover {
-    background-color: #ff6347;
-    transform: translateY(-5px);
-}
-
-/* Subscription Plan Section */
-#subscription-plan {
-    position: absolute;
-    top: 11em;
-    right: 50em;
-    background: url('subscription-bg.jpg') no-repeat center center/cover;
-    padding: 80px 20px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    margin: 20px auto;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-#subscription-plan:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-}
-
-#subscription-plan h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #333;
-    position: relative;
-}
-
-#subscription-plan h2::after {
-    content: '';
-    width: 60px;
-    height: 3px;
-    background-color: #ff6347;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -10px;
-}
-
-#subscription-plan h3 {
-    font-size: 2em;
-    color: #ff6347;
-    margin-bottom: 20px;
-}
-
-#subscription-plan ul {
-    margin: 0 auto;
+    height: 6.50vw; 
     padding: 0;
-    max-width: 400px;
-    text-align: left;
-    list-style-position: inside;
+    transition: all 0.4s ease;
+    
 }
 
-#subscription-plan ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    padding-left: 1.5em;
-    position: relative;
-}
 
-#subscription-plan ul li::before {
-    content: '✔';
-    color: #ff6347;
-    font-size: 1.2em;
+#copy{
     position: absolute;
-    left: 0;
-    top: 0;
-}
-
-#subscription-plan button {
-    background-color: #ff6347;
-    color: #FFFFFF;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    border-radius: 5px;
-    margin-top: 20px;
-}
-
-#subscription-plan button:hover {
-    background-color: #ff6347;
-    transform: translateY(-5px);
-}
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-}
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-.close:hover,
-.close:focus {
-    color: black;
+    display: flex;
+    top: 48.00vw;
+    left: 3.65vw;
+    font-size: 1.0vw;
+    width: 66.67vw;
+    font-family: Paytone One;
+    color: #fdfefe;
     text-decoration: none;
-    cursor: pointer;
-}
-#payment-modal {
-
-    
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
-
-#projectet1{
-
-    position: absolute; 
-    top: 4.6em; 
-    font-size: 3em;
-    font-family:
-    Merriweather;
-    left: 1.4em; 
-    color: black;
-}
-
-#textprojecte{
-
-border-radius: 10px;
-background-color:rgba(255, 99, 71, 0.7);
-backdrop-filter: blur(10px); 
-padding: 1.3em ; 
-text-align: justify;
-font-family:Merriweather;
-position: absolute; 
-top: 14em;
-left: 2em; 
-width: 50em; 
-font-size: 1.6em; 
-color: black;
-transition: background-color 0.4s ease, box-shadow 0.5s ease ;
-
-}
-
-#textc{
-
-    border-radius: 10px;
-    background-color:rgba(212, 109, 91, 0.7);
-    backdrop-filter: blur(10px); 
-    padding: 1.3em ; 
-    text-align: justify;
-    font-family:Merriweather;
-    position: absolute; 
-    top: 14em;
-    left: 2em; 
-    width: 50em; 
-    font-size: 1.6em; 
-    color: black;
-    transition: background-color 0.4s ease, box-shadow 0.5s ease ;
-}
-
-#textc:hover{
-
-    background-color:rgba(225, 146, 132, 0.73);
-    box-shadow: 4px 4px 30px rgb(96, 94, 94);
-}
-
-
-#textprojecte:hover{
-
-    background-color:rgba(229, 154, 141, 0.73);
-    box-shadow: 4px 4px 30px rgb(96, 94, 94);
-}
-
-#oriol{
-    background-color: rgb(229, 181, 172, 0.6);
-    padding: 0.4em 6.5em 13em 0.4em;
-    font-family: Merriweather;
-    position: absolute;
-    top: 7.8em;
-    left: 2.52em;
-    font-size: 2.3em;
-    color: black;
-    border-radius: 20px;
+    cursor: default;
     transition: all 0.4s ease;
-
     
-
-}
-
-.O{
-    transition: all 0.4s ease;
-}
-.J{
-    transition: all 0.4s ease;
-}
-
-.O:hover{
-    
-    
-
-    
-}
-.J:hover{
- 
-    
-   
-}
-
-.O:hover #oriol{
-    background-color: rgb(229, 181, 172, 086);
-
-}
-
-.J:hover #jaume{
-    background-color: rgb(229, 181, 172, 086);
-
-}
-
-#jaume{
-
-    background-color: rgb(229, 181, 172, 0.6);
-    padding: 0.4em 6.5em 13em 0.4em;
-    font-family: Merriweather;
-    position: absolute;
-    top: 7.8em;
-    left: 18.17em;
-    font-size: 2.3em;
-    color: black;
-    border-radius: 20px;
-    transition: all 0.4s ease;
-
-}
-
-#aio{
-    border-radius: 20px;
-    position: absolute;
-    right: 5em;
-    top: 15em;
-    transition: all 0.4s ease;
-    z-index: 1;
-}
-#aio:hover{
-    opacity: 0.6;
-}
-
-#shreck{
-    border-radius: 20px;
-    position: absolute;
-    right: 5em;
-    top: 15em;  
-    transition: all 0.4s ease;
-    width: 37.39em;
-    height: 30.8em;
-    z-index: 0;
-}
-
-#shreck:hover{
-
 }

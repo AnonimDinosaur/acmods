@@ -37,8 +37,10 @@
       
          <!-- img id="logo" src="logoeps-small.png" alt="a"> -->
          <div class="banner">
-            <h1 id="T1">NextLevelACMod</h1>
-            <h1 id="Tac">Asseto corsa Mod</h1>
+            <a href="index.html">
+                <h1 id="T1">NextLevelACMod</h1>
+                </a>
+                <h1 id="Tac">Assetto Corsa Mod</h1>
            
            
             <a target="_blank" href="https://www.assettocorsa.net">
@@ -52,7 +54,7 @@
             <div class="links">
                 <a id="H" href="index.html">Inici</a>
                 <a id="A" href="about.html">Qui som</a>
-                <a id="S" href="servei.html">servei</a>
+                <a id="S" href="servei.html">Servei</a>
                 <a id="P" href="Projecte.html">Projecte</a>
                 <a id="C" href="Credits.html">Credits</a>
             </div>
@@ -62,57 +64,15 @@
 <body style="background-size: 110em;">
     <!-- <p id="text" > Insta-la el mapa de l'escola pia Sabadell recreat amb fotogrametria i diverteix-te amb els nostres mods de cotxes teledirigits pels circuits.</p> -->
     <p id="copy">© [2024] NextLevelACMod. Tots els drets reservats.          <br>   <br>         NextLevelACMod - Millorant l'experiència de joc.</p>
-    <img  style="width: 30em; border-radius: 20px; position: absolute; top: 21em; left: 5em; box-shadow: 5px 5px 10px grey;" src="fotos/Pati_escola_Pia.png" alt="Imatge 1">
-    <section id="subscription-plan">
-        <h2>Juga ara!</h2>
-        <h3>0.90 Eur</h3>
-        <ul>
-            <li>Accés Indefinit al Mod</li>
-            <li>Accés Anticipat</li>
-            <li>50% de Descompte Aplicat</li>
-            <li>Identificador Premium</li>
-        </ul>
-        <button id="subscribe-now">Descarregar</button>
-    </section>
+    <img id="imgp" src="fotos/Pati_escola_Pia.png" alt="Imatge 1">
+    <h2 id="boardp">Descarrega ja el mapa d'AC</h2><br>
     
-    <div id="payment-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Detalls pagament</h2>
-            <form id="payment-form">
-                <input type="text" id="card-name" name="card-name" placeholder="nom targeta" required>
-                <input type="text" id="card-number" name="card-number" placeholder="número targeta" required>
-                <input type="text" id="expiry-date" name="expiry-date" placeholder="data d'expiració (MM/YY)" required>
-                <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
-                <button type="submit">Realitzar pagament</button>
-            </form>
-        </div>
+    <div class="buy">
+
+        <a id="descp" href="https://www.assettoworld.com/track/escola-pia-circuit-gran">Descarregar</a>
+        
+
     </div>
-
-    <script>
-        
-        var modal = document.getElementById("payment-modal");
-        var btn = document.getElementById("subscribe-now");
-        var span = document.getElementsByClassName("close")[0];
-    
-        
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-    
-        
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-    
-        
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-
 </body>
 
 </html>
